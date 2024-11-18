@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}
+  <title>College Homepage</title>
+  {% endblock %}
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-image: url();
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero-text {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+    }
+  </style>
+  {% block css %}
+  {% endblock %}
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Nepalgunj Campus of Management & Technology</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'csit.home' %}">CSIT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'bca.home' %}">BCA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'staff' %}">Staff</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-text">
+    <h1>Welcome to Administration Page</h1>
+  </div>
+</section>
+<!-- Programs Section -->
+<section id="programs" class="container my-5">
+  <h2 class="text-center">Our Programs</h2>
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title" >BSc.CSIT</h5>
+          <h5 class="card-title" >Affiliated to TU</h5>
+          <a class="card-text" href="https://iost.tu.edu.np/pages/our-affiliated-colleges-329">Institute of Science and Technology</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Bachelor in Computer Application</h5>
+          <h5 class="card-title" >Affiliated to TU</h5>
+          <a class="card-text" href="https://fohss.tu.edu.np/">Faculty of Humanities and Social Sciences</a>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<!-- News & Events Section -->
+<section id="news" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center">News & Events</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Event 1</h5>
+            <p class="card-text">Details about event 1.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Event 2</h5>
+            <p class="card-text">Details about event 2.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Event 3</h5>
+            <p class="card-text">Details about event 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container my-5">
+  <h2 class="text-center">Contact Us</h2>
+  <p class="text-center">For more information, please reach out to us at [Contact Information].</p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; [Current Year] [College Name]. All rights reserved.</p>
+</footer>
+
+
+{% endblock %}
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% block js %}
+{% endblock %}
+</body>
+</html>

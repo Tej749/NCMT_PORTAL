@@ -1,0 +1,63 @@
+{% extends 'csit/base.html' %}
+  {% block title %}
+  <title>edit csit 80</title>
+  {% endblock %}
+
+{% block content %}
+  <body>
+    <div class="container mt-5">
+        <h2 class="mb-3">Nepalgunj Campus : BSc.CSIT 2080</h2>
+
+        <!-- Basic Form -->
+        <form action="{% url 'editcsit80' dm.id %}" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="enter name" value="{{dm.name}}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">DOB</label>
+                <input type="text" name="dob" class="form-control" placeholder="enter DOB" value="{{dm.dob}}">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Symbol No</label>
+                <input type="text" name="symbol" class="form-control"  placeholder="enter retail price" value="{{dm.symbol}}">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Registration No</label>
+                <input type="text" name="reg" class="form-control" placeholder="enter registration no" value="{{dm.reg}}">
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">Mob No</label>
+                <input type="text" name="mob" class="form-control" placeholder="enter mob no" value="{{dm.mob}}">
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">Address</label>
+                <input type="text" name="add" class="form-control" placeholder="enter address" value="{{dm.add}}">
+            </div>
+           <div class="mb-2">
+                <label class="form-label">Guardian Name</label>
+                <input type="text" name="guardian" class="form-control" placeholder="Guardian name" value="{{dm.guardian}}">
+            </div>
+
+          <div class="mb-2">
+                <label class="form-label">Profession</label>
+                <input type="text" name="prof" class="form-control" placeholder="enter profession" value="{{dm.prof}}">
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">G/Mob No </label>
+                <input type="text" name="mobs" class="form-control" placeholder="enter guardian mob no" value="{{dm.mobs}}">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+{% endblock %}

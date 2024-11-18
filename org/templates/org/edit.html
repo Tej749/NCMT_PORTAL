@@ -1,0 +1,48 @@
+{% extends 'csit/base.html' %}
+  {% block title %}
+  <title>edit csit 80</title>
+  {% endblock %}
+
+{% block content %}
+  <body>
+    <div class="container mt-5">
+        <h2 class="mb-3">Nepalgunj Campus : Administration Office</h2>
+
+        <!-- Basic Form -->
+        <form action="{% url 'edit' dm.id %}" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" name="appt" class="form-control" placeholder="enter appointment" value="{{dm.appt}}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="enter DOB" value="{{dm.name}}">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Address</label>
+                <input type="text" name="add" class="form-control"  placeholder="enter retail price" value="{{dm.add}}">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Citizenship No</label>
+                <input type="text" name="citizen" class="form-control" placeholder="enter registration no" value="{{dm.citizen}}">
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">Mob No</label>
+                <input type="text" name="mob" class="form-control" placeholder="enter mob no" value="{{dm.mob}}">
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label">Marital Status</label>
+                <input type="text" name="marital" class="form-control" placeholder="enter address" value="{{dm.marital}}">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+{% endblock %}

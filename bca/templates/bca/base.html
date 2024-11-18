@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}
+  <title>Bootstrap Navbar Example</title>
+  {% endblock %}
+  <!-- Bootstrap CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" rel="stylesheet">
+  {% block css %}
+  {% endblock %}
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nepalgunj Campus : Bachelor in Computer Application</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="text-align:center" href="{% url 'bca80' %}">BCA 2080</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="text-align:center" href="{% url 'bca79' %}">BCA 2079</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="text-align:center" href="{% url 'bca78' %}">BCA 2078</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="text-align:center" href="{% url 'bca77' %}">BCA 2077</a>
+          </li>
+         <!-- Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
+             Courses
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="{% url 'bca.home' %}">BCA</a></li>
+              <li><a class="dropdown-item" href="{% url 'csit.home' %}">BSc.CSIT</a></li>
+              <li><a class="dropdown-item" href="{% url 'org.home' %}">Home</a></li>
+            </ul>
+          </div>
+      <!-- Dropdown -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% block content %}
+  <div class="mb-4 mt-5">
+  <h1 style="text-align:center">Welcome to BCA </h1>
+
+  </div>
+
+{% endblock %}
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="//cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  {% block js %}
+  {% endblock %}
+
+</html>
