@@ -3,6 +3,9 @@ from .models import Staff
 
 # Create your views here.
 
+def login(request):
+    return render(request, "org/login.html")
+
 def home(request):
     return render(request, "org/base.html")
 
