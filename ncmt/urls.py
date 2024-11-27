@@ -22,4 +22,5 @@ urlpatterns = [
     path("bca", include("bca.urls")),
     path("org", include("org.urls")),
     path("csit", include("csit.urls")),
+
 ]

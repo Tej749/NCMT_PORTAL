@@ -3,8 +3,11 @@ from .models import Staff
 
 # Create your views here.
 
-def login(request):
-    return render(request, "org/login.html")
+def main(request):
+    return render(request, "org/main.html")
+
+def signup(request):
+    return render(request, "org/signup.html")
 
 def home(request):
     return render(request, "org/base.html")
