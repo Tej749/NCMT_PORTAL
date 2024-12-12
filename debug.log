@@ -1,141 +1,310 @@
-2024-12-12 03:23:45,569 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:32:23,357 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:32:24,070 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:33:25,022 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:33:25,647 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:34:27,642 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:34:28,297 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:34:42,509 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
-2024-12-12 04:34:43,064 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
-2024-12-12 04:34:43,847 INFO "GET /bca/bca80 HTTP/1.1" 200 7129 212 
-2024-12-12 04:34:43,945 INFO "GET /bca/bca80 HTTP/1.1" 200 7129 212 
-2024-12-12 04:34:47,597 ERROR Internal Server Error: /bca/formbca80 241 
+2024-12-12 12:36:22,008 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 12:36:22,312 INFO Watching for file changes with StatReloader 668 
+2024-12-12 12:36:46,790 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 12:36:47,069 INFO Watching for file changes with StatReloader 668 
+2024-12-12 12:36:52,847 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 12:36:53,048 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 12:36:53,177 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 12:37:17,197 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 12:37:17,339 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 12:37:19,635 INFO "GET /org/org.home HTTP/1.1" 200 4967 212 
+2024-12-12 12:37:19,690 INFO "GET /org/org.home HTTP/1.1" 200 4967 212 
+2024-12-12 12:37:23,509 INFO "GET /org/staff HTTP/1.1" 200 7198 212 
+2024-12-12 12:37:23,580 INFO "GET /org/staff HTTP/1.1" 200 7198 212 
+2024-12-12 12:37:25,870 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
+2024-12-12 12:37:25,910 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
+2024-12-12 12:37:29,905 INFO "GET /bca/bca77 HTTP/1.1" 200 27010 212 
+2024-12-12 12:37:29,985 INFO "GET /bca/bca77 HTTP/1.1" 200 27010 212 
+2024-12-12 12:38:02,188 INFO "GET /bca/bca78 HTTP/1.1" 200 8197 212 
+2024-12-12 12:38:02,255 INFO "GET /bca/bca78 HTTP/1.1" 200 8197 212 
+2024-12-12 12:38:03,731 INFO "GET /bca/bca79 HTTP/1.1" 200 8186 212 
+2024-12-12 12:38:03,810 INFO "GET /bca/bca79 HTTP/1.1" 200 8186 212 
+2024-12-12 12:38:05,610 INFO "GET /bca/bca80 HTTP/1.1" 200 7120 212 
+2024-12-12 12:38:05,693 INFO "GET /bca/bca80 HTTP/1.1" 200 7120 212 
+2024-12-12 12:38:07,166 INFO "GET /bca/bca77 HTTP/1.1" 200 27010 212 
+2024-12-12 12:38:07,252 INFO "GET /bca/bca77 HTTP/1.1" 200 27010 212 
+2024-12-12 12:38:12,455 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 12:38:12,495 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 12:38:15,067 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 12:38:15,149 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 12:38:19,893 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 12:38:19,980 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 12:38:21,788 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 12:38:21,866 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 12:38:51,069 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 12:38:51,167 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 12:38:52,835 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 12:38:52,919 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 12:40:05,017 INFO "GET /org/org.home HTTP/1.1" 200 4967 212 
+2024-12-12 12:40:05,067 INFO "GET /org/org.home HTTP/1.1" 200 4967 212 
+2024-12-12 12:42:06,958 INFO "POST /bca/formbca79/delbca79/2 HTTP/1.1" 302 0 212 
+2024-12-12 12:42:06,992 INFO "GET /bca/bca79 HTTP/1.1" 200 7157 212 
+2024-12-12 12:42:07,124 INFO "GET /bca/bca79 HTTP/1.1" 200 7157 212 
+2024-12-12 12:42:09,964 INFO "POST /bca/formbca79/delbca79/3 HTTP/1.1" 302 0 212 
+2024-12-12 12:42:10,004 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:10,091 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:12,054 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:12,131 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:20,215 INFO "GET /bca/bca80 HTTP/1.1" 200 7120 212 
+2024-12-12 12:42:20,298 INFO "GET /bca/bca80 HTTP/1.1" 200 7120 212 
+2024-12-12 12:42:21,077 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:21,156 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:21,811 INFO "GET /bca/bca78 HTTP/1.1" 200 8197 212 
+2024-12-12 12:42:21,885 INFO "GET /bca/bca78 HTTP/1.1" 200 8197 212 
+2024-12-12 12:42:27,370 INFO "GET /bca/bca77 HTTP/1.1" 200 27010 212 
+2024-12-12 12:42:27,449 INFO "GET /bca/bca77 HTTP/1.1" 200 27010 212 
+2024-12-12 12:42:28,139 INFO "GET /bca/bca78 HTTP/1.1" 200 8197 212 
+2024-12-12 12:42:28,225 INFO "GET /bca/bca78 HTTP/1.1" 200 8197 212 
+2024-12-12 12:42:29,262 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:29,346 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:30,029 INFO "GET /bca/bca80 HTTP/1.1" 200 7120 212 
+2024-12-12 12:42:30,116 INFO "GET /bca/bca80 HTTP/1.1" 200 7120 212 
+2024-12-12 12:42:33,776 INFO "POST /bca/formbca80/delbca80/13 HTTP/1.1" 302 0 212 
+2024-12-12 12:42:33,815 INFO "GET /bca/bca80 HTTP/1.1" 200 6103 212 
+2024-12-12 12:42:33,901 INFO "GET /bca/bca80 HTTP/1.1" 200 6103 212 
+2024-12-12 12:42:35,167 INFO "GET /bca/bca77 HTTP/1.1" 200 27010 212 
+2024-12-12 12:42:35,255 INFO "GET /bca/bca77 HTTP/1.1" 200 27010 212 
+2024-12-12 12:42:35,997 INFO "GET /bca/bca78 HTTP/1.1" 200 8197 212 
+2024-12-12 12:42:36,082 INFO "GET /bca/bca78 HTTP/1.1" 200 8197 212 
+2024-12-12 12:42:36,796 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:36,885 INFO "GET /bca/bca79 HTTP/1.1" 200 6121 212 
+2024-12-12 12:42:37,654 INFO "GET /bca/bca80 HTTP/1.1" 200 6103 212 
+2024-12-12 12:42:37,731 INFO "GET /bca/bca80 HTTP/1.1" 200 6103 212 
+2024-12-12 12:42:38,389 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 12:42:38,426 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 12:42:38,462 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 12:42:41,004 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 12:42:41,045 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 12:42:42,754 INFO "GET /csit/csit80 HTTP/1.1" 200 8239 212 
+2024-12-12 12:42:42,839 INFO "GET /csit/csit80 HTTP/1.1" 200 8239 212 
+2024-12-12 12:42:43,630 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 12:42:43,722 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 12:42:44,319 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 12:42:44,403 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 12:42:45,085 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 12:42:45,160 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 12:42:47,954 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 12:42:47,994 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 12:42:50,272 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
+2024-12-12 12:42:50,312 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
+2024-12-12 12:42:52,304 INFO "GET /org/org.home HTTP/1.1" 200 4967 212 
+2024-12-12 12:42:52,354 INFO "GET /org/org.home HTTP/1.1" 200 4967 212 
+2024-12-12 14:36:08,298 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 14:36:08,338 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 14:36:08,523 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 14:36:08,583 INFO "GET /static/images/ncmt.mp4 HTTP/1.1" 200 10430141 212 
+2024-12-12 15:39:54,886 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:39:58,245 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:39:58,428 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:39:58,697 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:39:58,839 WARNING Not Found: /favicon.ico 241 
+2024-12-12 15:39:58,840 WARNING "GET /favicon.ico HTTP/1.1" 404 2652 212 
+2024-12-12 15:40:01,157 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
+2024-12-12 15:40:01,249 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
+2024-12-12 15:40:02,840 INFO "GET /bca/bca80 HTTP/1.1" 200 6103 212 
+2024-12-12 15:40:02,906 INFO "GET /bca/bca80 HTTP/1.1" 200 6103 212 
+2024-12-12 15:40:04,889 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
+2024-12-12 15:40:04,926 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
+2024-12-12 15:40:09,484 INFO "POST /bca/formbca80 HTTP/1.1" 302 0 212 
+2024-12-12 15:40:09,524 INFO "GET /bca/bca80 HTTP/1.1" 200 7225 212 
+2024-12-12 15:40:09,598 INFO "GET /bca/bca80 HTTP/1.1" 200 7114 212 
+2024-12-12 15:40:11,899 INFO "POST /bca/formbca80/delbca80/14 HTTP/1.1" 302 0 212 
+2024-12-12 15:40:11,926 INFO "GET /bca/bca80 HTTP/1.1" 200 6103 212 
+2024-12-12 15:40:12,001 INFO "GET /bca/bca80 HTTP/1.1" 200 6103 212 
+2024-12-12 15:41:30,712 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:41:30,999 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:42:36,937 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:42:37,202 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:42:50,484 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:42:50,762 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:43:00,452 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:43:00,520 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:43:00,594 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:43:02,778 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:43:02,861 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:43:04,624 INFO "GET /csit/csit80 HTTP/1.1" 200 8239 212 
+2024-12-12 15:43:04,693 INFO "GET /csit/csit80 HTTP/1.1" 200 8239 212 
+2024-12-12 15:43:06,624 INFO "GET /csit/formcsit80 HTTP/1.1" 200 5454 212 
+2024-12-12 15:43:06,660 INFO "GET /csit/formcsit80 HTTP/1.1" 200 5454 212 
+2024-12-12 15:43:17,379 INFO "POST /csit/formcsit80 HTTP/1.1" 302 0 212 
+2024-12-12 15:43:17,385 INFO "GET /csit/formcsit80 HTTP/1.1" 200 5565 212 
+2024-12-12 15:43:17,424 INFO "GET /csit/formcsit80 HTTP/1.1" 200 5454 212 
+2024-12-12 15:43:23,247 INFO "GET /csit/csit80 HTTP/1.1" 200 9346 212 
+2024-12-12 15:43:23,323 INFO "GET /csit/csit80 HTTP/1.1" 200 9346 212 
+2024-12-12 15:44:04,157 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:44:04,445 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:44:18,926 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:44:19,017 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:44:19,056 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:44:21,106 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:44:21,147 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:44:22,941 INFO "GET /csit/csit80 HTTP/1.1" 200 9346 212 
+2024-12-12 15:44:23,010 INFO "GET /csit/csit80 HTTP/1.1" 200 9346 212 
+2024-12-12 15:44:25,121 INFO "GET /csit/formcsit80 HTTP/1.1" 200 5454 212 
+2024-12-12 15:44:25,157 INFO "GET /csit/formcsit80 HTTP/1.1" 200 5454 212 
+2024-12-12 15:44:28,878 INFO "POST /csit/formcsit80 HTTP/1.1" 302 0 212 
+2024-12-12 15:44:28,920 INFO "GET /csit/csit80 HTTP/1.1" 200 10511 212 
+2024-12-12 15:44:28,998 INFO "GET /csit/csit80 HTTP/1.1" 200 10400 212 
+2024-12-12 15:44:32,526 INFO "POST /csit/formcsit80/delcsit80/3 HTTP/1.1" 302 0 212 
+2024-12-12 15:44:32,568 INFO "GET /csit/csit80 HTTP/1.1" 200 9340 212 
+2024-12-12 15:44:32,645 INFO "GET /csit/csit80 HTTP/1.1" 200 9340 212 
+2024-12-12 15:44:35,710 INFO "POST /csit/formcsit80/delcsit80/5 HTTP/1.1" 302 0 212 
+2024-12-12 15:44:35,754 INFO "GET /csit/csit80 HTTP/1.1" 200 8286 212 
+2024-12-12 15:44:35,832 INFO "GET /csit/csit80 HTTP/1.1" 200 8286 212 
+2024-12-12 15:44:53,386 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:44:53,674 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:44:54,698 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:44:54,771 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:44:54,834 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:44:57,195 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:44:57,233 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:44:58,923 INFO "GET /csit/csit80 HTTP/1.1" 200 8286 212 
+2024-12-12 15:44:58,993 INFO "GET /csit/csit80 HTTP/1.1" 200 8286 212 
+2024-12-12 15:45:00,608 INFO "GET /csit/formcsit80 HTTP/1.1" 200 5454 212 
+2024-12-12 15:45:00,644 INFO "GET /csit/formcsit80 HTTP/1.1" 200 5454 212 
+2024-12-12 15:45:06,274 ERROR name 'jhhkjkj' is not defined 42 
 Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 204, in _get_response
-    self.check_response(response, callback)
-  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 332, in check_response
-    raise ValueError(
-ValueError: The view bca.views.formbca80 didn't return an HttpResponse object. It returned None instead.
-2024-12-12 04:34:47,598 ERROR "GET /bca/formbca80 HTTP/1.1" 500 62927 212 
-2024-12-12 04:34:47,639 ERROR Internal Server Error: /bca/formbca80 241 
+  File "/Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py", line 24, in formcsit80
+    jhhkjkj
+NameError: name 'jhhkjkj' is not defined
+2024-12-12 15:45:06,278 INFO "POST /csit/formcsit80 HTTP/1.1" 302 0 212 
+2024-12-12 15:45:06,337 INFO "GET /csit/csit80 HTTP/1.1" 200 8286 212 
+2024-12-12 15:45:06,410 INFO "GET /csit/csit80 HTTP/1.1" 200 8286 212 
+2024-12-12 15:45:28,325 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:45:28,617 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:46:30,514 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:46:30,780 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:46:35,761 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:46:35,821 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:46:35,875 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:46:38,212 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:46:38,265 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:46:41,058 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 15:46:41,128 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 15:46:50,262 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:46:50,554 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:46:53,414 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:46:53,472 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:46:53,527 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:46:55,608 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:46:55,651 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:46:57,910 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 15:46:57,985 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 15:46:59,792 INFO "GET /csit/formcsit79 HTTP/1.1" 200 5454 212 
+2024-12-12 15:46:59,828 INFO "GET /csit/formcsit79 HTTP/1.1" 200 5454 212 
+2024-12-12 15:47:08,226 ERROR name 'dfffd' is not defined 103 
 Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 204, in _get_response
-    self.check_response(response, callback)
-  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/base.py", line 332, in check_response
-    raise ValueError(
-ValueError: The view bca.views.formbca80 didn't return an HttpResponse object. It returned None instead.
-2024-12-12 04:34:47,640 ERROR "GET /bca/formbca80 HTTP/1.1" 500 61877 212 
-2024-12-12 04:35:34,492 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:35:35,180 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:35:37,118 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:35:37,198 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:35:41,490 INFO "GET /bca/bca80 HTTP/1.1" 200 7129 212 
-2024-12-12 04:35:41,582 INFO "GET /bca/bca80 HTTP/1.1" 200 7129 212 
-2024-12-12 04:35:44,192 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:35:44,227 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:35:57,745 INFO "POST /bca/formbca80 HTTP/1.1" 302 0 212 
-2024-12-12 04:35:57,800 INFO "GET /bca/bca80 HTTP/1.1" 200 8266 212 
-2024-12-12 04:35:57,911 INFO "GET /bca/bca80 HTTP/1.1" 200 8157 212 
-2024-12-12 04:36:13,103 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:36:14,390 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:36:17,777 INFO "GET /bca/bca80 HTTP/1.1" 200 8157 212 
-2024-12-12 04:36:17,905 INFO "GET /bca/bca80 HTTP/1.1" 200 8157 212 
-2024-12-12 04:36:20,476 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:36:20,513 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:36:39,641 ERROR name 'fdjfkdjkj' is not defined 40 
+  File "/Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py", line 87, in formcsit79
+    dfffd
+NameError: name 'dfffd' is not defined
+2024-12-12 15:47:08,229 INFO "POST /csit/formcsit79 HTTP/1.1" 302 0 212 
+2024-12-12 15:47:08,289 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 15:47:08,359 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 15:47:28,331 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:47:28,639 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:48:38,789 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:48:39,070 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:48:56,399 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:48:56,683 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:49:02,417 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:49:02,486 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:49:02,551 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:49:05,279 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:49:05,320 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:49:09,485 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 15:49:09,563 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 15:49:26,357 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:49:26,666 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:49:30,187 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:49:30,263 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:49:30,325 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:49:32,510 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:49:32,552 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:49:34,266 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 15:49:34,353 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 15:49:41,048 INFO "GET /csit/formcsit78 HTTP/1.1" 200 5454 212 
+2024-12-12 15:49:41,077 INFO "GET /csit/formcsit78 HTTP/1.1" 200 5454 212 
+2024-12-12 15:49:47,166 ERROR name 'djkjkdjfkfjdj' is not defined 164 
 Traceback (most recent call last):
-  File "/Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py", line 24, in formbca80
-    fdjfkdjkj
-NameError: name 'fdjfkdjkj' is not defined
-2024-12-12 04:36:39,649 INFO "POST /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:36:39,693 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:36:44,347 INFO "GET /bca/bca80 HTTP/1.1" 200 8157 212 
-2024-12-12 04:36:44,456 INFO "GET /bca/bca80 HTTP/1.1" 200 8157 212 
-2024-12-12 04:38:02,204 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:38:02,248 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:38:10,550 ERROR name 'fdjfkdjkj' is not defined 40 
+  File "/Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py", line 153, in formcsit78
+    djkjkdjfkfjdj
+NameError: name 'djkjkdjfkfjdj' is not defined
+2024-12-12 15:49:47,174 INFO "POST /csit/formcsit78 HTTP/1.1" 302 0 212 
+2024-12-12 15:49:47,244 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 15:49:47,319 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 15:50:11,592 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:50:11,907 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:52:50,414 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:52:50,668 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:52:58,870 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:52:59,058 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:52:59,666 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:52:59,787 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:52:59,848 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:53:01,576 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:53:01,691 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:53:03,131 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 15:53:03,227 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
+2024-12-12 15:53:04,212 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 15:53:04,291 INFO "GET /csit/csit78 HTTP/1.1" 200 38450 212 
+2024-12-12 15:53:04,910 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 15:53:04,987 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 15:53:06,992 INFO "GET /csit/formcsit77 HTTP/1.1" 200 5461 212 
+2024-12-12 15:53:07,027 INFO "GET /csit/formcsit77 HTTP/1.1" 200 5461 212 
+2024-12-12 15:53:13,345 ERROR name 'jdjfjdfdj' is not defined 224 
 Traceback (most recent call last):
-  File "/Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py", line 24, in formbca80
-    fdjfkdjkj
-NameError: name 'fdjfkdjkj' is not defined
-2024-12-12 04:38:10,556 INFO "POST /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:38:10,590 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:38:35,475 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:38:36,139 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:38:47,359 INFO "POST /bca/formbca80 HTTP/1.1" 302 0 212 
-2024-12-12 04:38:47,421 INFO "GET /bca/bca80 HTTP/1.1" 200 9292 212 
-2024-12-12 04:38:47,534 INFO "GET /bca/bca80 HTTP/1.1" 200 9183 212 
-2024-12-12 04:39:06,650 INFO "POST /bca/formbca80/delbca80/8 HTTP/1.1" 302 0 212 
-2024-12-12 04:39:06,699 INFO "GET /bca/bca80 HTTP/1.1" 200 8155 212 
-2024-12-12 04:39:06,803 INFO "GET /bca/bca80 HTTP/1.1" 200 8155 212 
-2024-12-12 04:39:07,472 INFO "POST /bca/formbca80/delbca80/9 HTTP/1.1" 302 0 212 
-2024-12-12 04:39:07,520 INFO "GET /bca/bca80 HTTP/1.1" 200 7129 212 
-2024-12-12 04:39:07,611 INFO "GET /bca/bca80 HTTP/1.1" 200 7129 212 
-2024-12-12 04:45:15,164 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:45:15,837 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:45:36,338 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:45:37,020 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:45:52,476 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:45:53,116 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:46:12,624 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:46:13,363 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:46:25,769 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:46:26,415 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:46:38,836 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 04:46:39,465 INFO Watching for file changes with StatReloader 668 
-2024-12-12 04:46:47,352 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:46:47,551 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 04:46:59,542 INFO "POST /bca/formbca80 HTTP/1.1" 302 0 212 
-2024-12-12 04:46:59,604 INFO "GET /bca/bca80 HTTP/1.1" 200 8272 212 
-2024-12-12 04:46:59,704 INFO "GET /bca/bca80 HTTP/1.1" 200 8161 212 
-2024-12-12 06:04:38,086 INFO Watching for file changes with StatReloader 668 
-2024-12-12 06:04:45,348 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 06:04:45,350 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 06:04:45,353 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 06:04:45,356 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 06:04:45,817 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
-2024-12-12 06:04:45,820 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
-2024-12-12 06:04:45,829 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
-2024-12-12 06:04:45,853 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
-2024-12-12 06:04:46,017 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 06:04:46,035 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 06:04:46,040 WARNING Not Found: /favicon.ico 241 
-2024-12-12 06:04:46,041 WARNING "GET /favicon.ico HTTP/1.1" 404 2652 212 
-2024-12-12 06:04:46,086 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 06:04:46,095 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 06:04:46,222 INFO "GET /static/images/ncmt.mp4 HTTP/1.1" 200 10430141 212 
-2024-12-12 06:04:49,446 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
-2024-12-12 06:04:49,536 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
-2024-12-12 06:04:51,167 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
-2024-12-12 06:04:51,247 INFO "GET /csit/csit79 HTTP/1.1" 200 21052 212 
-2024-12-12 06:09:33,015 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 06:09:33,315 INFO Watching for file changes with StatReloader 668 
-2024-12-12 06:14:01,988 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 06:14:02,315 INFO Watching for file changes with StatReloader 668 
-2024-12-12 06:14:28,766 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/bca/views.py changed, reloading. 266 
-2024-12-12 06:14:29,030 INFO Watching for file changes with StatReloader 668 
-2024-12-12 10:57:12,381 INFO Watching for file changes with StatReloader 668 
-2024-12-12 10:57:14,594 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 10:57:14,647 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
-2024-12-12 10:57:14,672 INFO "GET /static/images/ncmt.mp4 HTTP/1.1" 304 0 212 
-2024-12-12 10:57:14,874 INFO "GET / HTTP/1.1" 200 9324 212 
-2024-12-12 10:57:15,091 WARNING Not Found: /favicon.ico 241 
-2024-12-12 10:57:15,091 WARNING "GET /favicon.ico HTTP/1.1" 404 2652 212 
-2024-12-12 10:57:16,940 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
-2024-12-12 10:57:17,098 INFO "GET /bca/ HTTP/1.1" 200 3417 212 
-2024-12-12 10:57:18,624 INFO "GET /bca/bca80 HTTP/1.1" 200 8161 212 
-2024-12-12 10:57:18,698 INFO "GET /bca/bca80 HTTP/1.1" 200 8161 212 
-2024-12-12 10:57:20,620 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 10:57:20,660 INFO "GET /bca/formbca80 HTTP/1.1" 200 5623 212 
-2024-12-12 10:57:22,562 INFO "POST /bca/formbca80 HTTP/1.1" 302 0 212 
-2024-12-12 10:57:22,605 INFO "GET /bca/bca80 HTTP/1.1" 200 9280 212 
-2024-12-12 10:57:22,683 INFO "GET /bca/bca80 HTTP/1.1" 200 9169 212 
-2024-12-12 10:57:27,560 INFO "POST /bca/formbca80/delbca80/11 HTTP/1.1" 302 0 212 
-2024-12-12 10:57:27,601 INFO "GET /bca/bca80 HTTP/1.1" 200 8161 212 
-2024-12-12 10:57:28,282 INFO "GET /bca/bca80 HTTP/1.1" 200 8161 212 
+  File "/Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py", line 213, in formcsit77
+    jdjfjdfdj
+NameError: name 'jdjfjdfdj' is not defined
+2024-12-12 15:53:13,350 INFO "POST /csit/formcsit77 HTTP/1.1" 302 0 212 
+2024-12-12 15:53:13,413 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 15:53:13,488 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 15:53:38,852 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/csit/views_csit.py changed, reloading. 266 
+2024-12-12 15:53:39,137 INFO Watching for file changes with StatReloader 668 
+2024-12-12 15:54:46,430 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:54:46,487 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:54:46,577 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:54:48,761 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:54:48,805 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 15:54:50,985 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 15:54:51,071 INFO "GET /csit/csit77 HTTP/1.1" 200 22605 212 
+2024-12-12 15:54:52,497 INFO "GET /csit/formcsit77 HTTP/1.1" 200 5470 212 
+2024-12-12 15:54:52,532 INFO "GET /csit/formcsit77 HTTP/1.1" 200 5470 212 
+2024-12-12 15:57:48,808 INFO "GET /csit/formcsit77 HTTP/1.1" 200 5470 212 
+2024-12-12 15:57:48,864 INFO "GET /csit/formcsit77 HTTP/1.1" 200 5470 212 
+2024-12-12 15:57:50,598 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 15:57:50,622 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 15:57:50,646 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 17:05:35,835 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 17:05:36,048 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 17:05:36,248 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 17:05:36,277 INFO "GET /static/images/ncmt.mp4 HTTP/1.1" 200 10430141 212 
+2024-12-12 17:05:36,392 WARNING Not Found: /favicon.ico 241 
+2024-12-12 17:05:36,393 WARNING "GET /favicon.ico HTTP/1.1" 404 2652 212 
+2024-12-12 17:06:48,885 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/org/views.py changed, reloading. 266 
+2024-12-12 17:06:49,233 INFO Watching for file changes with StatReloader 668 
+2024-12-12 17:07:43,046 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/org/views.py changed, reloading. 266 
+2024-12-12 17:07:43,288 INFO Watching for file changes with StatReloader 668 
+2024-12-12 17:07:50,466 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/org/views.py changed, reloading. 266 
+2024-12-12 17:07:50,674 INFO Watching for file changes with StatReloader 668 
+2024-12-12 17:07:51,524 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 17:07:51,606 WARNING "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1867 212 
+2024-12-12 17:07:51,641 INFO "GET / HTTP/1.1" 200 9324 212 
+2024-12-12 17:07:56,537 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 17:07:56,621 INFO "GET /csit/ HTTP/1.1" 200 3499 212 
+2024-12-12 17:08:03,236 INFO "GET /org/org.home HTTP/1.1" 200 4967 212 
+2024-12-12 17:08:03,307 INFO "GET /org/org.home HTTP/1.1" 200 4967 212 
+2024-12-12 17:08:07,608 INFO "GET /org/staff HTTP/1.1" 200 7198 212 
+2024-12-12 17:08:07,682 INFO "GET /org/staff HTTP/1.1" 200 7198 212 
+2024-12-12 17:08:09,237 INFO "GET /org/form HTTP/1.1" 200 4167 212 
+2024-12-12 17:08:09,271 INFO "GET /org/form HTTP/1.1" 200 4167 212 
+2024-12-12 17:08:22,385 ERROR name 'djkdjfk' is not defined 40 
+Traceback (most recent call last):
+  File "/Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/org/views.py", line 31, in form
+    djkdjfk
+NameError: name 'djkdjfk' is not defined
+2024-12-12 17:08:22,389 INFO "POST /org/form HTTP/1.1" 302 0 212 
+2024-12-12 17:08:22,452 INFO "GET /org/staff HTTP/1.1" 200 7198 212 
+2024-12-12 17:08:22,527 INFO "GET /org/staff HTTP/1.1" 200 7198 212 
+2024-12-12 17:09:05,044 INFO /Users/tejthapa/Desktop/8. WORKSHOP/NCMT_PORTAL/ncmt/org/views.py changed, reloading. 266 
+2024-12-12 17:09:05,307 INFO Watching for file changes with StatReloader 668 

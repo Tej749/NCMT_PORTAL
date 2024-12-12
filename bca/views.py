@@ -3,6 +3,8 @@ import logging
 
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.utils.dateparse import postgres_interval_re
+
 from .models import Bca_2080, Bca_2079, Bca_2078, Bca_2077
 
 from . import global_msg
@@ -39,7 +41,7 @@ def formbca80(request):
         return render(request, "bca/formbca80.html")
     except Exception as exe:
         logger.error(str(exe), exc_info=True)
-        return render(request, "bca/formbca80.html")
+        return redirect('/bca/bca80')
 
 def editbca80(request, pk):
     if request.method == "POST":
@@ -96,10 +98,11 @@ def formbca79(request):
                                     prof=prof, mobs=mobs)
             messages.success(request, global_msg.SUCCESS_MESSAGE)
             return redirect('/bca/bca79')
-        return render(request, "bca/bca79.html")
+        return render(request, "bca/formbca79.html")
     except Exception as exe:
         logger.error(str(exe), exc_info=True)
-        return render(request, "bca/formbca79.html")
+        return redirect("/bca/bca79")
+
 
 def editbca79(request, pk):
     if request.method == "POST":
@@ -139,23 +142,28 @@ def bca78(request):
     return render(request, "bca/bca78.html", {'da':da})
 
 def formbca78(request):
-    if request.method == "POST":
-        data = request.POST
-        name = data.get("name")
-        dob = data.get("dob")
-        symbol = data.get("symbol")
-        reg = data.get("reg")
-        mob = data.get("mob")
-        add = data.get("add")
-        guardian = data.get("guardian")
-        prof = data.get("prof")
-        mobs = data.get("mobs")
-        Bca_2078.objects.create(name=name, dob=dob, symbol=symbol,
-                                reg=reg, mob=mob, add=add, guardian=guardian,
-                                prof=prof, mobs=mobs)
-        messages.success(request, global_msg.SUCCESS_MESSAGE)
+    try:
+        if request.method == "POST":
+            data = request.POST
+            name = data.get("name")
+            dob = data.get("dob")
+            symbol = data.get("symbol")
+            reg = data.get("reg")
+            mob = data.get("mob")
+            add = data.get("add")
+            guardian = data.get("guardian")
+            prof = data.get("prof")
+            mobs = data.get("mobs")
+            Bca_2078.objects.create(name=name, dob=dob, symbol=symbol,
+                                    reg=reg, mob=mob, add=add, guardian=guardian,
+                                    prof=prof, mobs=mobs)
+            messages.success(request, global_msg.SUCCESS_MESSAGE)
+            return redirect('/bca/bca78')
+        return render(request, "bca/formbca78.html")
+
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
         return redirect('/bca/bca78')
-    return render(request, "bca/formbca78.html")
 
 def editbca78(request, pk):
     if request.method == "POST":
@@ -195,23 +203,30 @@ def bca77(request):
     return render(request, "bca/bca77.html", {'da':da})
 
 def formbca77(request):
-    if request.method == "POST":
-        data = request.POST
-        name = data.get("name")
-        dob = data.get("dob")
-        symbol = data.get("symbol")
-        reg = data.get("reg")
-        mob = data.get("mob")
-        add = data.get("add")
-        guardian = data.get("guardian")
-        prof = data.get("prof")
-        mobs = data.get("mobs")
-        Bca_2077.objects.create(name=name, dob=dob, symbol=symbol,
-                                reg=reg, mob=mob, add=add, guardian=guardian,
-                                prof=prof, mobs=mobs)
-        messages.success(request, global_msg.SUCCESS_MESSAGE)
-        return redirect('/bca/bca77')
-    return render(request, "bca/formbca77.html")
+    try:
+        if request.method == "POST":
+            data = request.POST
+            name = data.get("name")
+            dob = data.get("dob")
+            symbol = data.get("symbol")
+            reg = data.get("reg")
+            mob = data.get("mob")
+            add = data.get("add")
+            guardian = data.get("guardian")
+            prof = data.get("prof")
+            mobs = data.get("mobs")
+            Bca_2077.objects.create(name=name, dob=dob, symbol=symbol,
+                                    reg=reg, mob=mob, add=add, guardian=guardian,
+                                    prof=prof, mobs=mobs)
+            messages.success(request, global_msg.SUCCESS_MESSAGE)
+            return redirect('/bca/bca77')
+        return render(request, "bca/formbca77.html")
+
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
+        return redirect("/bca/bca77")
+
+
 
 def editbca77(request, pk):
     if request.method == "POST":

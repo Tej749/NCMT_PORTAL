@@ -1,8 +1,12 @@
 ''' views of CSIT modules'''
 
+import logging
+
 from django.shortcuts import render, redirect
-from django.contrib import messages
 from .models import Csit_2080, Csit_2079, Csit_2078, Csit_2077
+from django.contrib import messages
+
+logger = logging.getLogger("django")
 
 # Create your views here.
 '''CSIT home page function'''
@@ -15,23 +19,28 @@ def csit80(request):
     return render(request, "csit/csit80.html", {'da':da})
 
 def formcsit80(request):
-    if request.method == "POST":
-        data = request.POST
-        name = data.get("name")
-        dob = data.get("dob")
-        symbol = data.get("symbol")
-        reg = data.get("reg")
-        mob = data.get("mob")
-        add = data.get("add")
-        guardian = data.get("guardian")
-        prof = data.get("prof")
-        mobs = data.get("mobs")
-        Csit_2080.objects.create(name=name, dob=dob, symbol=symbol,
-                                 reg=reg, mob=mob, add=add, guardian=guardian,
-                                 prof=prof, mobs=mobs)
-        messages.success(request, "Data successfully saved...")
-        return redirect('/csit/formcsit80')
-    return render(request, "csit/formcsit80.html")
+    try:
+        if request.method == "POST":
+            data = request.POST
+            name = data.get("name")
+            dob = data.get("dob")
+            symbol = data.get("symbol")
+            reg = data.get("reg")
+            mob = data.get("mob")
+            add = data.get("add")
+            guardian = data.get("guardian")
+            prof = data.get("prof")
+            mobs = data.get("mobs")
+            Csit_2080.objects.create(name=name, dob=dob, symbol=symbol,
+                                     reg=reg, mob=mob, add=add, guardian=guardian,
+                                     prof=prof, mobs=mobs)
+            messages.success(request, "Data successfully saved...")
+            return redirect('/csit/csit80')
+        return render(request, "csit/formcsit80.html")
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
+        return redirect('/csit/csit80')
+
 
 def editcsit80(request, pk):
     if request.method == "POST":
@@ -71,23 +80,28 @@ def csit79(request):
     return render(request, "csit/csit79.html", {'da':da})
 
 def formcsit79(request):
-    if request.method == "POST":
-        data = request.POST
-        name = data.get("name")
-        dob = data.get("dob")
-        symbol = data.get("symbol")
-        reg = data.get("reg")
-        mob = data.get("mob")
-        add = data.get("add")
-        guardian = data.get("guardian")
-        prof = data.get("prof")
-        mobs = data.get("mobs")
-        Csit_2079.objects.create(name=name, dob=dob, symbol=symbol,
-                                 reg=reg, mob=mob, add=add, guardian=guardian,
-                                 prof=prof, mobs=mobs)
-        messages.success(request, "Data successfully saved.")
+    try:
+        if request.method == "POST":
+            data = request.POST
+            name = data.get("name")
+            dob = data.get("dob")
+            symbol = data.get("symbol")
+            reg = data.get("reg")
+            mob = data.get("mob")
+            add = data.get("add")
+            guardian = data.get("guardian")
+            prof = data.get("prof")
+            mobs = data.get("mobs")
+            Csit_2079.objects.create(name=name, dob=dob, symbol=symbol,
+                                     reg=reg, mob=mob, add=add, guardian=guardian,
+                                     prof=prof, mobs=mobs)
+            messages.success(request, "Data successfully saved.")
+            return redirect('/csit/csit79')
+        return render(request, "csit/formcsit79.html")
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
         return redirect('/csit/csit79')
-    return render(request, "csit/formcsit79.html")
+
 
 def editcsit79(request, pk):
     if request.method == "POST":
@@ -127,23 +141,27 @@ def csit78(request):
     return render(request, "csit/csit78.html", {'da':da})
 
 def formcsit78(request):
-    if request.method == "POST":
-        data = request.POST
-        name = data.get("name")
-        dob = data.get("dob")
-        symbol = data.get("symbol")
-        reg = data.get("reg")
-        mob = data.get("mob")
-        add = data.get("add")
-        guardian = data.get("guardian")
-        prof = data.get("prof")
-        mobs = data.get("mobs")
-        Csit_2078.objects.create(name=name, dob=dob, symbol=symbol,
-                                 reg=reg, mob=mob, add=add, guardian=guardian,
-                                 prof=prof, mobs=mobs)
-        messages.success(request, "Data successfully saved.")
-        return redirect('/csit/csit78')
-    return render(request, "csit/formcsit78.html")
+    try:
+        if request.method == "POST":
+            data = request.POST
+            name = data.get("name")
+            dob = data.get("dob")
+            symbol = data.get("symbol")
+            reg = data.get("reg")
+            mob = data.get("mob")
+            add = data.get("add")
+            guardian = data.get("guardian")
+            prof = data.get("prof")
+            mobs = data.get("mobs")
+            Csit_2078.objects.create(name=name, dob=dob, symbol=symbol,
+                                     reg=reg, mob=mob, add=add, guardian=guardian,
+                                     prof=prof, mobs=mobs)
+            messages.success(request, "Data successfully saved.")
+            return redirect('/csit/csit78')
+        return render(request, "csit/formcsit78.html")
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
+        return redirect("/csit/csit78")
 
 def editcsit78(request, pk):
     if request.method == "POST":
@@ -183,23 +201,27 @@ def csit77(request):
     return render(request, "csit/csit77.html", {'da':da})
 
 def formcsit77(request):
-    if request.method == "POST":
-        data = request.POST
-        name = data.get("name")
-        dob = data.get("dob")
-        symbol = data.get("symbol")
-        reg = data.get("reg")
-        mob = data.get("mob")
-        add = data.get("add")
-        guardian = data.get("guardian")
-        prof = data.get("prof")
-        mobs = data.get("mobs")
-        Csit_2077.objects.create(name=name, dob=dob, symbol=symbol,
-                                 reg=reg, mob=mob, add=add, guardian=guardian,
-                                 prof=prof, mobs=mobs)
-        messages.success(request, "Data successfully saved.")
-        return redirect('/csit/csit77')
-    return render(request, "csit/formcsit77.html")
+    try:
+        if request.method == "POST":
+            data = request.POST
+            name = data.get("name")
+            dob = data.get("dob")
+            symbol = data.get("symbol")
+            reg = data.get("reg")
+            mob = data.get("mob")
+            add = data.get("add")
+            guardian = data.get("guardian")
+            prof = data.get("prof")
+            mobs = data.get("mobs")
+            Csit_2077.objects.create(name=name, dob=dob, symbol=symbol,
+                                     reg=reg, mob=mob, add=add, guardian=guardian,
+                                     prof=prof, mobs=mobs)
+            messages.success(request, "Data successfully saved.")
+            return redirect('/csit/csit77')
+        return render(request, "csit/formcsit77.html")
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
+        return redirect("/csit/csit77")
 
 def editcsit77(request, pk):
     if request.method == "POST":

@@ -1,6 +1,10 @@
+import logging
+
 from django.shortcuts import render, redirect
 from .models import Staff
+
 from django.contrib import messages
+logger = logging.getLogger("django")
 
 # Create your views here.
 
@@ -18,18 +22,22 @@ def staff(request):
     return render(request, "org/staff.html", {'dm':dm})
 
 def form(request):
-    if request.method == "POST":
-        data = request.POST
-        appt = data.get("appt")
-        name = data.get("name")
-        add = data.get("add")
-        citizen = data.get("citizen")
-        mob = data.get("mob")
-        marital = data.get("marital")
-        Staff.objects.create(appt=appt, name=name, add=add, citizen=citizen, mob=mob, marital=marital)
-        messages.success(request, "Data successfully saved..")
-        return redirect('/org/staff')
-    return render(request, "org/form.html")
+    try:
+        if request.method == "POST":
+            data = request.POST
+            appt = data.get("appt")
+            name = data.get("name")
+            add = data.get("add")
+            citizen = data.get("citizen")
+            mob = data.get("mob")
+            marital = data.get("marital")
+            Staff.objects.create(appt=appt, name=name, add=add, citizen=citizen, mob=mob, marital=marital)
+            messages.success(request, "Data successfully saved..")
+            return redirect('/org/staff')
+        return render(request, "org/form.html")
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
+        return redirect("/org/staff")
 
 def edit(request, pk):
     if request.method == "POST":
