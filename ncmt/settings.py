@@ -143,3 +143,36 @@ DATABASES = {
 }
 
 # database = "pip install psycopg2-binary"
+
+# DEBUG_LOGGERS
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'timestamp': {
+            'format': '{asctime} {levelname} {message} {lineno} ',
+            'style': '{',
+
+        },
+
+    },
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+            'formatter': 'timestamp'
+        },
+
+
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+
+    },
+}

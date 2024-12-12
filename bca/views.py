@@ -1,34 +1,45 @@
-from timeit import default_timer
+''' this is python views page'''
+import logging
 
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Bca_2080, Bca_2079, Bca_2078, Bca_2077
 
-# Create your views here.
+from . import global_msg
+logger = logging.getLogger("django")
 
+# Create your views here.
+'''bca home page base templates'''
 def home(request):
     return render(request, "bca/base.html")
-
-
+'''BCA 2080 Students details'''
 # BCA 2080
 def bca80(request):
-    da = Bca_2080.objects.all()
+    da = Bca_2080.objects.all().order_by('id')
     return render(request, "bca/bca80.html", {'da':da})
 
 def formbca80(request):
-    if request.method == "POST":
-        data = request.POST
-        name = data.get("name")
-        dob = data.get("dob")
-        symbol = data.get("symbol")
-        reg = data.get("reg")
-        mob = data.get("mob")
-        add = data.get("add")
-        guardian = data.get("guardian")
-        prof = data.get("prof")
-        mobs = data.get("mobs")
-        Bca_2080.objects.create(name=name, dob=dob, symbol=symbol, reg=reg, mob=mob, add=add, guardian=guardian, prof=prof, mobs=mobs)
-        return redirect('/bca/bca80')
-    return render(request, "bca/formbca80.html")
+    try:
+        if request.method == "POST":
+            data = request.POST
+            name = data.get("name")
+            dob = data.get("dob")
+            symbol = data.get("symbol")
+            reg = data.get("reg")
+            mob = data.get("mob")
+            add = data.get("add")
+            guardian = data.get("guardian")
+            prof = data.get("prof")
+            mobs = data.get("mobs")
+            Bca_2080.objects.create(name=name, dob=dob, symbol=symbol,
+                                    reg=reg, mob=mob, add=add, guardian=guardian,
+                                    prof=prof, mobs=mobs)
+            messages.success(request, global_msg.SUCCESS_MESSAGE)
+            return redirect('/bca/bca80')
+        return render(request, "bca/formbca80.html")
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
+        return render(request, "bca/formbca80.html")
 
 def editbca80(request, pk):
     if request.method == "POST":
@@ -64,24 +75,31 @@ def delbca80(request, pk):
 # BCA 2079
 
 def bca79(request):
-    da = Bca_2079.objects.all()
+    da = Bca_2079.objects.all().order_by('id')
     return render(request, "bca/bca79.html", {'da':da})
 
 def formbca79(request):
-    if request.method == "POST":
-        data = request.POST
-        name = data.get("name")
-        dob = data.get("dob")
-        symbol = data.get("symbol")
-        reg = data.get("reg")
-        mob = data.get("mob")
-        add = data.get("add")
-        guardian = data.get("guardian")
-        prof = data.get("prof")
-        mobs = data.get("mobs")
-        Bca_2079.objects.create(name=name, dob=dob, symbol=symbol, reg=reg, mob=mob, add=add, guardian=guardian, prof=prof, mobs=mobs)
-        return redirect('/bca/bca79')
-    return render(request, "bca/formbca79.html")
+    try:
+        if request.method == "POST":
+            data = request.POST
+            name = data.get("name")
+            dob = data.get("dob")
+            symbol = data.get("symbol")
+            reg = data.get("reg")
+            mob = data.get("mob")
+            add = data.get("add")
+            guardian = data.get("guardian")
+            prof = data.get("prof")
+            mobs = data.get("mobs")
+            Bca_2079.objects.create(name=name, dob=dob, symbol=symbol,
+                                    reg=reg, mob=mob, add=add, guardian=guardian,
+                                    prof=prof, mobs=mobs)
+            messages.success(request, global_msg.SUCCESS_MESSAGE)
+            return redirect('/bca/bca79')
+        return render(request, "bca/bca79.html")
+    except Exception as exe:
+        logger.error(str(exe), exc_info=True)
+        return render(request, "bca/formbca79.html")
 
 def editbca79(request, pk):
     if request.method == "POST":
@@ -117,7 +135,7 @@ def delbca79(request, pk):
 # BCA 2078
 
 def bca78(request):
-    da = Bca_2078.objects.all()
+    da = Bca_2078.objects.all().order_by('id')
     return render(request, "bca/bca78.html", {'da':da})
 
 def formbca78(request):
@@ -132,7 +150,10 @@ def formbca78(request):
         guardian = data.get("guardian")
         prof = data.get("prof")
         mobs = data.get("mobs")
-        Bca_2078.objects.create(name=name, dob=dob, symbol=symbol, reg=reg, mob=mob, add=add, guardian=guardian, prof=prof, mobs=mobs)
+        Bca_2078.objects.create(name=name, dob=dob, symbol=symbol,
+                                reg=reg, mob=mob, add=add, guardian=guardian,
+                                prof=prof, mobs=mobs)
+        messages.success(request, global_msg.SUCCESS_MESSAGE)
         return redirect('/bca/bca78')
     return render(request, "bca/formbca78.html")
 
@@ -170,7 +191,7 @@ def delbca78(request, pk):
 # BCA 2077
 
 def bca77(request):
-    da = Bca_2077.objects.all()
+    da = Bca_2077.objects.all().order_by('id')
     return render(request, "bca/bca77.html", {'da':da})
 
 def formbca77(request):
@@ -185,7 +206,10 @@ def formbca77(request):
         guardian = data.get("guardian")
         prof = data.get("prof")
         mobs = data.get("mobs")
-        Bca_2077.objects.create(name=name, dob=dob, symbol=symbol, reg=reg, mob=mob, add=add, guardian=guardian, prof=prof, mobs=mobs)
+        Bca_2077.objects.create(name=name, dob=dob, symbol=symbol,
+                                reg=reg, mob=mob, add=add, guardian=guardian,
+                                prof=prof, mobs=mobs)
+        messages.success(request, global_msg.SUCCESS_MESSAGE)
         return redirect('/bca/bca77')
     return render(request, "bca/formbca77.html")
 
@@ -219,6 +243,3 @@ def editbca77(request, pk):
 def delbca77(request, pk):
     Bca_2077.objects.get(id=pk).delete()
     return redirect("/bca/bca77")
-
-
-

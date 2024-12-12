@@ -1,15 +1,17 @@
+''' views of CSIT modules'''
+
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Csit_2080, Csit_2079, Csit_2078, Csit_2077
 
 # Create your views here.
-
+'''CSIT home page function'''
 def home(request):
     return render(request, "csit/base.html")
 
 # Batch 2080
 def csit80(request):
-    da = Csit_2080.objects.all()
+    da = Csit_2080.objects.all().order_by('id')
     return render(request, "csit/csit80.html", {'da':da})
 
 def formcsit80(request):
@@ -24,7 +26,9 @@ def formcsit80(request):
         guardian = data.get("guardian")
         prof = data.get("prof")
         mobs = data.get("mobs")
-        Csit_2080.objects.create(name=name, dob=dob, symbol=symbol, reg=reg, mob=mob, add=add, guardian=guardian, prof=prof, mobs=mobs)
+        Csit_2080.objects.create(name=name, dob=dob, symbol=symbol,
+                                 reg=reg, mob=mob, add=add, guardian=guardian,
+                                 prof=prof, mobs=mobs)
         messages.success(request, "Data successfully saved...")
         return redirect('/csit/formcsit80')
     return render(request, "csit/formcsit80.html")
@@ -63,7 +67,7 @@ def delcsit80(request, pk):
 # Batch CSIT 2079
 
 def csit79(request):
-    da = Csit_2079.objects.all()
+    da = Csit_2079.objects.all().order_by('id')
     return render(request, "csit/csit79.html", {'da':da})
 
 def formcsit79(request):
@@ -78,7 +82,10 @@ def formcsit79(request):
         guardian = data.get("guardian")
         prof = data.get("prof")
         mobs = data.get("mobs")
-        Csit_2079.objects.create(name=name, dob=dob, symbol=symbol, reg=reg, mob=mob, add=add, guardian=guardian, prof=prof, mobs=mobs)
+        Csit_2079.objects.create(name=name, dob=dob, symbol=symbol,
+                                 reg=reg, mob=mob, add=add, guardian=guardian,
+                                 prof=prof, mobs=mobs)
+        messages.success(request, "Data successfully saved.")
         return redirect('/csit/csit79')
     return render(request, "csit/formcsit79.html")
 
@@ -116,7 +123,7 @@ def delcsit79(request, pk):
 # Batch CSIT 2078
 
 def csit78(request):
-    da = Csit_2078.objects.all()
+    da = Csit_2078.objects.all().order_by('id')
     return render(request, "csit/csit78.html", {'da':da})
 
 def formcsit78(request):
@@ -131,7 +138,10 @@ def formcsit78(request):
         guardian = data.get("guardian")
         prof = data.get("prof")
         mobs = data.get("mobs")
-        Csit_2078.objects.create(name=name, dob=dob, symbol=symbol, reg=reg, mob=mob, add=add, guardian=guardian, prof=prof, mobs=mobs)
+        Csit_2078.objects.create(name=name, dob=dob, symbol=symbol,
+                                 reg=reg, mob=mob, add=add, guardian=guardian,
+                                 prof=prof, mobs=mobs)
+        messages.success(request, "Data successfully saved.")
         return redirect('/csit/csit78')
     return render(request, "csit/formcsit78.html")
 
@@ -169,7 +179,7 @@ def delcsit78(request, pk):
 # Batch CSIT 2077
 
 def csit77(request):
-    da = Csit_2077.objects.all()
+    da = Csit_2077.objects.all().order_by('id')
     return render(request, "csit/csit77.html", {'da':da})
 
 def formcsit77(request):
@@ -184,7 +194,10 @@ def formcsit77(request):
         guardian = data.get("guardian")
         prof = data.get("prof")
         mobs = data.get("mobs")
-        Csit_2077.objects.create(name=name, dob=dob, symbol=symbol, reg=reg, mob=mob, add=add, guardian=guardian, prof=prof, mobs=mobs)
+        Csit_2077.objects.create(name=name, dob=dob, symbol=symbol,
+                                 reg=reg, mob=mob, add=add, guardian=guardian,
+                                 prof=prof, mobs=mobs)
+        messages.success(request, "Data successfully saved.")
         return redirect('/csit/csit77')
     return render(request, "csit/formcsit77.html")
 
@@ -221,4 +234,3 @@ def editcsit77(request, pk):
 def delcsit77(request, pk):
     Csit_2077.objects.get(id=pk).delete()
     return redirect("/csit/csit77")
-

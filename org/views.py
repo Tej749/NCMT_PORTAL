@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Staff
+from django.contrib import messages
 
 # Create your views here.
 
@@ -13,7 +14,7 @@ def home(request):
     return render(request, "org/base.html")
 
 def staff(request):
-    dm = Staff.objects.all()
+    dm = Staff.objects.all().order_by('id')
     return render(request, "org/staff.html", {'dm':dm})
 
 def form(request):
@@ -26,6 +27,7 @@ def form(request):
         mob = data.get("mob")
         marital = data.get("marital")
         Staff.objects.create(appt=appt, name=name, add=add, citizen=citizen, mob=mob, marital=marital)
+        messages.success(request, "Data successfully saved..")
         return redirect('/org/staff')
     return render(request, "org/form.html")
 

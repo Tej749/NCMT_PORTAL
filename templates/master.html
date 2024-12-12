@@ -38,7 +38,7 @@ https://templatemo.com/tm-569-edu-meeting
       <div class="row">
         <div class="col-lg-8 col-sm-8">
           <div class="left-content">
-            <p>This the right place to <em>start your IT carrier</em>, NCMT Portal </p>
+            <p>This is the right place to <em>start your IT carrier</em>, NCMT Portal </p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-4">
@@ -72,10 +72,10 @@ https://templatemo.com/tm-569-edu-meeting
                           <li><a href="meetings.html">Meetings</a></li>
                           <li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
                           <li class="has-sub">
-                              <a href="javascript:void(0)">Pages</a>
+                              <a href="javascript:void(0)" class="active"> Faculty</a>
                               <ul class="sub-menu">
-                                  <li><a href="meetings.html">Upcoming Meetings</a></li>
-                                  <li><a href="meeting-details.html">Meeting Details</a></li>
+                                  <li><a href="{% url 'bca.home' %}">BCA</a></li>
+                                  <li><a href="{% url 'csit.home' %}">BSc.CSIT</a></li>
                               </ul>
                           </li>
                           <li class="scroll-to-section"><a href="#courses">Courses</a></li>
@@ -95,7 +95,7 @@ https://templatemo.com/tm-569-edu-meeting
  <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="/static/images/course-video.mp4" type="video/mp4" />
+          <source src="/static/images/ncmt.mp4" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -178,7 +178,7 @@ https://templatemo.com/tm-569-edu-meeting
               </li>
               <li>
                 <h6>Website URL</h6>
-                <span>www.nepalgunjcollege.edu.np</span>
+                <span>www.npjcollege.edu.np</span>
               </li>
             </ul>
           </div>
